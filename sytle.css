@@ -1,0 +1,182 @@
+
+.navbar{
+    background-color:darkslategray !important;
+}
+.navbar .navbar-brand{
+    color: #FFF;
+}
+
+.navbar .navbar-brand:hover{
+    color: #FFF;
+    
+}
+
+.navbar .navbar-nav li a{
+    color: #FFF ! important;
+}
+
+
+.btn{
+
+
+  
+  padding-left: 15px;
+  padding-right: 15px;
+  padding-top: 15px;
+  padding-bottom: 15px;
+
+  text-align: center;
+  
+  color:white;
+  background-color: darkslategray;
+  border-radius: 15px;
+  border-color: white;
+ 
+  
+}
+/* html,body {
+    height:100vh !important;
+  
+  }
+  
+  .carousel-inner,.carousel,.item,.container,.fill {
+    height:100vh ! important;
+    width:100%;
+    background-position:center center;
+  } */
+
+
+
+
+
+
+
+
+.button{
+    margin-top: 300px;
+}
+*/
+.black{
+    margin-top: 190px;
+
+}
+.red{
+    margin-top: 190px; 
+}
+.green{
+    margin-top: 165px;
+}
+
+.close{
+    color: white;
+}
+
+
+
+.nikhil{
+    /* margin-top: 130px; */
+    border:2px solid darkslategray;
+    box-sizing: content-box;
+        width: 60%;
+        height: 80%;
+        padding:  10px;
+        margin-top: 150px;
+        border-radius: 15px;
+        /* margin-bottom: 150px; */
+        background-color:darkslategray;
+    
+}
+.rounded-circle{
+    margin-top: 60px;
+    margin-left: 60px;
+background-color: white;
+
+}
+h3{
+    margin-top: 30px;
+
+    margin-left: 50px;
+    
+}
+footer {
+    position: fixed;
+    height: 100px;
+    bottom: 0;
+    width: 100%;
+}
+.akhil{
+    border:0.5px solid black;
+}
+html, body, header, footer{
+    height:100%;
+    }
+
+
+
+.card-body{
+padding-left: 100px;
+    background-color: black;
+}
+
+.footer {
+    
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    background-color:black;
+    color: white;
+    text-align: center;
+    height: 2em;
+     /* position: absolute;  */
+     position:relative; 
+    margin-top:auto; 
+    /* z-index:1; */
+
+  }
+  .flex-wrapper {
+    display: flex;
+    min-height: 100vh;
+    flex-direction: column;
+    justify-content: space-between
+  }
+  .mickey{
+    padding-right: 50px;
+    text-align: center;
+    padding-top: 60px;
+}
+.big{
+height: 600px;    
+ background : linear-gradient( darkslategray,white)  ; 
+}
+.bg-light {
+    background-color: lightgray!important;
+}
+.change {
+background-color: lightgray;
+}
+.madan{
+    text-align: center;
+
+}
+.site-content{
+    background-color: lightgrey
+}
+
+[type="date"] {
+    background:#fff url(https://cdn1.iconfinder.com/data/icons/cc_mono_icon_set/blacks/16x16/calendar_2.png)  97% 50% no-repeat ;
+  }
+  [type="date"]::-webkit-inner-spin-button {
+    display: none;
+  }
+  [type="date"]::-webkit-calendar-picker-indicator {
+    opacity: 0;
+  }
+  
+.head{
+    height:592px;
+    background-color: lightgrey;
+   padding: 1rem!important;
+   margin-bottom: 3rem!important;
+   box-shadow: none!important;
+   border-radius: .25rem!important
+}

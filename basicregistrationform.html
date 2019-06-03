@@ -1,0 +1,217 @@
+<?php 
+include('connection.php');
+include('faculty_session.php');
+?>
+
+<!doctype html>
+<html lang="en">
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/css/bootstrap.min.css" integrity="sha384-GJzZqFGwb1QTTN6wy59ffF1BuGJpLSa9DkKMp0DgiMDm4iYMj70gZWKYbI706tWS" crossorigin="anonymous">
+    <link rel="stylesheet" href="sytle.css" class="css">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.0.13/css/all.css" integrity="sha384-DNOHZ68U8hZfKXOrtjWvjxusGo9WQnrNx2sqG0tfsghAvtVlRW3tvkXWZh58N9jp" crossorigin="anonymous">
+
+    <title>E-counselling</title>
+	
+	<style>
+.dropdown {
+  position: relative;
+  display: inline-block;
+}
+
+.dropdown-content {
+  display: none;
+  position: absolute;
+  background-color: #f9f9f9;
+  min-width: 160px;
+  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+  z-index: 1;
+}
+
+.dropdown-content a {
+  color: black;
+  padding: 12px 16px;
+  text-decoration: none;
+  display: block;
+}
+
+.dropdown-content a:hover {background-color: #f1f1f1}
+
+.dropdown:hover .dropdown-content {
+  display: block;
+}
+
+
+	</style>
+  </head>
+  <body>            
+
+    <div class="flex-wrapper">
+        <nav class="navbar navbar-expand-md navbar-dark bg-dark">
+		<div class="navbar-collapse collapse w-100 order-1 order-md-0 dual-collapse2">
+			<ul class="navbar-nav mr-auto">
+				<li class="nav-item active">
+               <!-- <a class="nav-link" href="#">E-counselling</a> -->
+			   <img src="images/7c787b68-5ede-454b-82e4-b18a90555daf.png" alt="" width="180" height="70">
+				</li>            
+			</ul>
+		</div>    
+		<div class="navbar-collapse collapse w-100 order-3 dual-collapse2">
+			<ul class="navbar-nav ml-auto">
+            <li class="nav-item">
+                <a class="nav-link" href="index.php">Home</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="about.php" >About</a>
+            </li>
+            
+           
+            <li class="nav-item">
+                <a class="nav-link" href="contact.html">Contact</a>
+            </li>
+           
+			</ul>
+        
+            <!-- <button class="btn " data-toggle="modal" data-target="#exampleModal">  </button> -->
+            <div class="dropdown">
+				<button class="btn">Hi <?php echo $login_session; ?></button>
+				<div class="dropdown-content">
+					<a href="faculty_profile.php">Profile</a>
+					<a href="edit_faculty_profile.php"> Edit Profile</a>
+					<a href="logout.php">Log out</a>
+
+				</div>
+			</div>
+        
+		</div>
+		</nav>
+
+
+
+
+
+
+
+
+
+
+    <div class="site-content container-fluid ">
+            <!-- <div class="container body-content" style="padding-top:-10px; margin-top:-10px"> -->
+        <div class="row">
+            <div class="col-sm-3"></div>
+            <div class="col-sm-6">
+
+
+
+<center><h4>Fill Profile</h4></center>
+<form name="myform" action="registration_faculty.php" method="POST" enctype="multipart/form-data">
+				<div class="form-group">
+                    <input type="number" class="form-control" name="userid"  placeholder="User Id">
+                  </div>
+                <div class="form-group">
+                    <input type="text" class="form-control" name="fname"  placeholder="FirstName">
+                  </div>
+                
+                <div class="form-group">
+                    <input type="text" class="form-control" name="lname"  placeholder="Lastname">
+                  </div>
+				<div class="form-group">
+                    <input type="text" class="form-control" name="qual"  placeholder="Qualification">
+                  </div>
+                  <div class="form-group">
+                    <input type="date" class="form-control" name="dob"  placeholder="Date of Birth">
+                  </div>
+                
+                <div class="form-group">
+                    <input type="email" class="form-control" name="email" placeholder="E-mail">
+                  </div>
+				<div class="form-group">
+                    <input type="number" class="form-control" name="phno"  placeholder="Mobile Number">
+                  </div>
+   
+                  
+                  
+
+						  <tr> <td><input type="radio" name="gender" value="male"> Male</td></tr>
+                          <tr> <td> <input type="radio" name="gender" value="female"> Female </tr>
+    
+   
+                            <div class="form-group">
+                                    
+                                    <textarea class="form-control" id="exampleFormControlTextarea1" rows="2" name="address" placeholder="Address"></textarea>
+                                  </div>
+                                  
+					<div class="form-group">
+					<input class="form-control" id="exampleInputEmail1" Value="Choose Profile Picture" disabled>
+                    <input type="file" class="form-control" name="file" value="choose your picture">
+                  </div>
+					
+                  
+   
+
+
+
+                      <input type="submit" class="btn " value="save" name="submit" />
+
+
+</form>
+
+
+            </div>
+            <div class="col-sm-3">
+               
+                  </div>
+
+
+
+
+
+
+
+
+
+            </div>
+        </div>
+    </div>
+     <div class="footer">
+    <nav class="navbar navbar-expand-md navbar-dark bg-dark">
+      <div class="navbar-collapse collapse w-100 order-1 order-md-0 dual-collapse2">
+          <ul class="navbar-nav mr-auto">
+              <li class="nav-item active">
+                  <a class="nav-link" href="#">E-counselling</a>
+              </li>
+              
+          </ul>
+      </div>
+      
+      <div class="navbar-collapse collapse w-100 order-3 dual-collapse2">
+          <ul class="navbar-nav ml-auto">
+            <li class="nav-item">
+              <a class="nav-link" href="#"><i class=" close fab fa-twitter"style="color:white;"></i></a>
+          </li>
+          <li class="nav-item">
+              <a class="nav-link" href="#"><i class="fab fa-facebook-square close"style="color:white;"></i></a>
+          </li>
+           <li class="nav-item">
+              <a class="nav-link" href="#"><i class="fab fa-linkedin close"style="color:white;"></i></a>
+          </li>
+               <li class="nav-item">
+                  <a class="nav-link" href="#"></a>
+              </li>
+          </ul>
+  
+      </div>
+      
+    
+
+    <!-- Optional JavaScript -->
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+  </body>
+</html>

@@ -1,0 +1,573 @@
+ <?php
+include('login.php');
+?>
+
+<!doctype html>
+<html lang="en">
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/css/bootstrap.min.css" integrity="sha384-GJzZqFGwb1QTTN6wy59ffF1BuGJpLSa9DkKMp0DgiMDm4iYMj70gZWKYbI706tWS" crossorigin="anonymous">
+    <link rel="stylesheet" href="sytle.css" class="css">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.0.13/css/all.css" integrity="sha384-DNOHZ68U8hZfKXOrtjWvjxusGo9WQnrNx2sqG0tfsghAvtVlRW3tvkXWZh58N9jp" crossorigin="anonymous">
+
+    <title>E-counselling</title>
+  </head>
+  <body>
+ 
+
+
+            
+
+    <div class="flex-wrapper">
+           <nav class="navbar navbar-expand-md navbar-dark bg-dark">
+    <div class="navbar-collapse collapse w-100 order-1 order-md-0 dual-collapse2">
+        <ul class="navbar-nav mr-auto">
+            <li class="nav-item active">
+               <!-- <a class="nav-link" href="#">E-counselling</a> -->
+			   <img src="images/7c787b68-5ede-454b-82e4-b18a90555daf.png" alt="" width="180" height="70">
+            </li>
+            
+        </ul>
+    </div>
+    
+    <div class="navbar-collapse collapse w-100 order-3 dual-collapse2">
+        <ul class="navbar-nav ml-auto">
+            <li class="nav-item">
+                <a class="nav-link" href="index.html">Home</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="about.html" >About</a>
+            </li>
+            
+           
+            <li class="nav-item">
+                <a class="nav-link" href="#">Contact</a>
+            </li>
+           
+        </ul>
+        
+             <button class="btn " data-toggle="modal" data-target="#exampleModal">Register</button>
+            <button type="button" class="btn" data-toggle="modal" data-target="#exampleModal1">
+                Login
+              </button>
+
+
+
+
+
+
+
+
+
+
+        
+    </div>
+    
+    
+    
+    
+</nav>
+           
+               
+
+
+             
+
+<div class="modal fade" id="exampleModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+  <div class="modal-dialog modal-lg" role="document">
+    <div class="modal-content">
+      <div class="modal-header"style="background-color:darkslategray;">
+        <h5 class="modal-title" >Modal title</h5>
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+          <span aria-hidden="true">&times;</span>
+        </button>
+      </div>
+      <div class="modal-body">
+       
+      <div class="container">
+	
+        <div class="row">
+		<div class="col-md-3"></div>
+          <div class="col-md-6 col-md-6 h black"> 
+              <h2 >SignUp</h2>
+               
+               <form name="myform" action="signup.php" method="POST">
+          
+          <div class="form-group row">
+            <div class="col-sm-10">
+              <input type="text" class="form-control form-control-lg" id="colFormLabelLg" placeholder="UserName" name="username">
+            </div>
+            
+          </div>
+          
+          
+          
+          <div class="form-group row">
+            <div class="col-sm-10">
+              <input type="number" class="form-control form-control-lg" id="colFormLabelLg" placeholder="User Id" name="userid">
+            </div>
+            
+          </div>
+          
+          
+          <div class="form-group row">
+            <div class="col-sm-10">
+              <input type="password" class="form-control form-control-lg" id="colFormLabelLg" placeholder="Password" name="password">
+            </div>
+            
+          </div>
+          
+          
+           
+          <div class="form-group row">
+            <div class="col-sm-10">
+              <input type="password" class="form-control form-control-lg" id="colFormLabelLg" placeholder="Re-enter Password" name="cpassword">
+            </div>
+            
+          </div>
+		  
+		  <div class="form-group row">
+            <div class="col-sm-10">
+              <input type="radio"  id="colFormLabelLg" name="type_login" value="student">Student<br>
+			  <input type="radio" id="colFormLabelLg" name="type_login" value="faculty">Faculty<br>
+			  
+            </div>
+            
+          </div> 
+          
+          <div class="form-group row">
+            <div class="col-sm-10">
+               <button class="btn btn-dark btn-lg ">
+                    
+                  Sign me Up</button>
+            
+            
+            </div>
+            
+          </div>
+          
+          
+          
+        </form>
+                
+                </div>
+                
+            
+            
+            
+          
+        <!--     <button type="button" class="btn btn-primary  btn-lg">SignUp</button>-->
+          </div>
+        </div>
+              </div>
+            
+            
+          
+            
+            
+            
+            <div class="col-md-3"></div>
+            
+          
+    </div>
+  </div>
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+                   
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<!-- 
+
+                     
+                       
+                           
+                             
+                               
+ <div class="container-fluid">
+            <div class="row">
+                  <div class="col-sm-4">
+                        
+                
+                
+                </div>
+                
+                
+                
+                
+                
+                        <div class="col-sm-8"> 
+
+
+
+
+
+
+
+
+                                <div class="d-flex">
+                                        <div class="col-sm-4 nikhil">
+                                              <a href="student1.html">  <img src="images/image.jpg" alt="..." class="rounded-circle"></a>
+                                                <h3 style="color:white">STUDENT</h3>
+
+                                        </div>
+                                        <div class="col-sm-2"></div>
+                                        <div class="col-sm-4 nikhil"><a href="facultylogin.html">
+                                                <img src="images/Webp.net-resizeimage (4).png" alt="..." class="rounded-circle"style="background-color:white"  ></a>
+                                                <h3 style="color:white">FACULTY</h3>
+
+                                        </div>
+                                        <div class="col-sm-2"></div>
+                                      </div>
+
+
+            </div>
+      
+      
+  
+  </div>
+</div>
+   -->
+  
+  
+  
+
+
+
+
+
+
+    
+    
+   <!-- <div class="container-fluid">
+    <div class="row">
+          <div class="col-sm-4">
+                
+        
+        
+        </div> -->
+    
+           
+        <div class="container">
+          <div class="row">
+        
+              <div class="col-lg nikhil">
+                <a data-toggle="modal" data-target="#exampleModal1">  <img src="images/image.jpg" alt="..." class="rounded-circle"></a>
+                  <h3 style="color:white">ADMIN</h3>
+
+          </div>
+            <div class="col-lg"></div>
+          
+          <div class="col-lg nikhil">
+            <a data-toggle="modal" data-target="#exampleModal1">  <img src="images/image.jpg" alt="..." class="rounded-circle"></a>
+              <h3 style="color:white">FACULTY</h3>
+
+      </div>
+            
+      <div class="col-lg"></div>
+          
+              <div class="col-lg nikhil">
+                <a data-toggle="modal" data-target="#exampleModal1">  <img src="images/image.jpg" alt="..." class="rounded-circle"></a>
+                  <h3 style="color:white">STUDENT</h3>
+
+          </div>
+          </div>
+        </div>                          
+                                     
+                                       
+                                         
+                                           
+                                             
+                
+           
+
+           
+           
+           
+<!--
+           
+           
+           
+           <div id="footer">
+ <div class="navbar navbar-inner  navbar-fixed-bottom">
+    <p class="muted credit"><center>ver 1.0.1</center></p>
+ </div>
+</div>
+           
+-->
+        
+<div class="footer">
+  <nav class="navbar navbar-expand-md navbar-dark bg-dark">
+    <div class="navbar-collapse collapse w-100 order-1 order-md-0 dual-collapse2">
+        <ul class="navbar-nav mr-auto">
+            <li class="nav-item active">
+                <a class="nav-link" href="#">E-counselling</a>
+            </li>
+            
+        </ul>
+    </div>
+    
+    <div class="navbar-collapse collapse w-100 order-3 dual-collapse2">
+        <ul class="navbar-nav ml-auto">
+          <li class="nav-item">
+            <a class="nav-link" href="#"><i class=" close fab fa-twitter"style="color:white;"></i></a>
+        </li>
+        <li class="nav-item">
+            <a class="nav-link" href="#"><i class="fab fa-facebook-square close"style="color:white;"></i></a>
+        </li>
+         <li class="nav-item">
+            <a class="nav-link" href="#"><i class="fab fa-linkedin close"style="color:white;"></i></a>
+        </li>
+             <li class="nav-item">
+                <a class="nav-link" href="#"></a>
+            </li>
+        </ul>
+
+    </div>
+    
+    
+    
+    
+</nav>
+             
+               
+                 
+                  
+  </div>
+ 
+
+           
+          
+  </div>     
+           
+           
+           
+           
+            
+    <!-- Optional JavaScript -->
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.6/umd/popper.min.js" integrity="sha384-wHAiFfRlMFy6i5SRaxvfOCifBUQy1xHdJ/yoi7FRNXMRBu5WHdZYu1hA6ZOblgut" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/js/bootstrap.min.js" integrity="sha384-B0UglyR+jN6CkvvICOB2joaf5I4l3gm9GU6Hc1og6Ls7i6U/mkkaduKaBhlAXv9k" crossorigin="anonymous"></script>
+   <script>
+      $(function () {
+    $('[data-toggle="popover"]').popover({
+      container: 'body'
+    })
+  })
+  </script> 
+
+ 
+
+
+
+
+
+
+            
+            
+          
+            
+            
+            
+            
+            
+          </div>
+    </div>
+  </div>
+</div>
+
+<!-- login -->
+ <div class="modal fade" id="exampleModal1" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel1" aria-hidden="true">
+  <div class="modal-dialog modal-lg" role="document">
+    <div class="modal-content">
+      <div class="modal-header"style="background-color:darkslategray;">
+        <h5 class="modal-title" >Modal title</h5>
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+          <span aria-hidden="true">&times;</span>
+        </button>
+      </div>
+      <div class="modal-body">
+       
+      <div class="container">
+	
+        <div class="row">
+				<div class="col-md-3"></div>
+          <div class="col-6 col-md-6 h black"> 
+              <h2 >Login</h2>
+               
+               <form name="myform" action="" method = "POST">
+          
+          
+          
+          
+          
+          <div class="form-group row">
+            <div class="col-sm-10">
+              <input type="number" class="form-control form-control-lg" id="colFormLabelLg" placeholder="userid" name="userid">
+            </div>
+            
+          </div>
+          
+          
+          <div class="form-group row">
+            <div class="col-sm-10">
+              <input type="password" class="form-control form-control-lg" id="colFormLabelLg" placeholder="Password" name="password">
+            </div>
+            
+          </div>
+		  
+		  <div class="form-group row">
+            <div class="col-sm-10">
+              <input type="radio"  id="colFormLabelLg" name="type_login" value="student">Student<br>
+			  <input type="radio" id="colFormLabelLg" name="type_login" value="faculty">Faculty<br>
+			  <input type="radio" id="colFormLabelLg"  name="type_login" value="admin">Admin<br>
+            </div>
+            
+          </div>       
+          
+           
+         
+          
+          <div class="form-group row">
+            <div class="col-sm-10">
+               <input type="submit" name = "submit" class="btn btn-dark btn-lg " value="Login" >
+                    
+               
+            
+            
+            </div>
+            <span><?php echo $error;?></span>
+          </div>
+          
+          
+          
+        </form>
+                
+                </div>
+          
+        </div>
+        </div>
+				<div class="col-md-3"></div>
+		</div>
+		</div>
+
+
+
+
+</body>
+</html>

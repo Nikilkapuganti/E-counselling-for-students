@@ -1,0 +1,95 @@
+<?php
+$servername="localhost";
+$username="root";
+$password="";
+$dbname="sample";
+$a=$_POST["name"];
+$b=$_POST["rollno"];
+$c=$_POST["csem"];
+$d=$_POST["atten"];
+$e=$_POST["problem"];
+$f=$_POST["int1"];
+$g=$_POST["int2"];
+$h=$_POST["int3"];
+$i=$_POST["int4"];
+$j=$_POST["int5"];
+$k=$_POST["int6"];
+$l=$_POST["int21"];
+$m=$_POST["int22"];
+$n=$_POST["int23"];
+$o=$_POST["int24"];
+$p=$_POST["int25"];
+$q=$_POST["int26"];
+$r=$_POST["ssem1"];
+$s=$_POST["ssem2"];
+$t=$_POST["ssem3"];
+$u=$_POST["ssem4"];
+$v=$_POST["ssem5"];
+$w=$_POST["ssem6"];
+$x=$_POST["ssem7"];
+$y=$_POST["ssem8"];
+$z=$_POST["bsem1"];
+$aa=$_POST["bsem2"];
+$ab=$_POST["bsem3"];
+$ac=$_POST["bsem4"];
+$ad=$_POST["bsem5"];
+$ae=$_POST["bsem6"];
+$af=$_POST["bsem7"];
+$ag=$_POST["bsem8"];
+$ah=$_POST["csem1"];
+$ai=$_POST["csem2"];
+$aj=$_POST["csem3"];
+$ak=$_POST["csem4"];
+$al=$_POST["csem5"];
+$am=$_POST["csem6"];
+$an=$_POST["csem7"];
+$ao=$_POST["csem8"];
+$m1=$_POST["as1"];
+$n1=$_POST["as2"];
+$o1=$_POST["as3"];
+$p1=$_POST["as4"];
+$q1=$_POST["as5"];
+$r1=$_POST["as6"];
+$s1=$_POST["as7"];
+$t1=$_POST["as8"];
+$ap=$_POST["csa1"];
+$aq=$_POST["csa2"];
+$ar=$_POST["csa3"];
+$as=$_POST["csa4"];
+$at=$_POST["csa5"];
+$au=$_POST["csa6"];
+$av=$_POST["date"];
+$aw=$_POST["act"];
+$ax=$_POST["mtc"];
+$ay=$_POST["place"];
+$az=$_POST["pname"];
+$ba=$_POST["occu"];
+$bb=$_POST["ntls"];
+$bc=$_POST["ach"];
+$con=mysqli_connect($servername,$username,$password,$dbname);
+if(!$con)
+{
+echo"not connected".mysqli_connect_error($con);
+}
+else
+{
+	
+		$sql="insert into student_counselling values('$a','$b','$c','$d','$e','$f','$g','$h','$i','$j','$k','$l','$m','$n','$o','$p','$q','$r','$s','$t','$u','$v','$w','$x','$y','$z','$aa','$ab','$ac','$ad','$ae','$af','$ag','$ah','$ai','$aj','$ak','$al','$am','$an','$ao','$ap','$aq','$ar','$as','$at','$au','$av','$aw','$ax','$ay','$az','$ba','$bb','$bc','$m1','$n1','$o1','$p1','$q1','$r1','$s1','$t1')";
+		//if(mysqli_query($con,$sql))
+			if(mysqli_query($con,$sql))
+			{
+				echo '<script>alert("Sent Successfully")
+	location="student_login.php";
+	</script>';
+				exit;  
+ 
+			}
+			
+			else
+			{
+				echo "<h1>data not inserted:</h1>". mysqli_error($con);
+			}
+	
+}
+mysqli_close($con)
+?>
